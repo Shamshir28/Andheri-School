@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Santacruz</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+							
+<tr>	<td>	Arya Vidya Mandir	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	B M C Santacruz W High School	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	BMC High School	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	BMC Santacruz Purva Shala Samuha	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	Bhim Prerana Vikas Mandal Balwadi	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	Brihanmumbai Mahanagarpalika Khotwadi School	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	Brihanmumbai Mahanagarpalika Khotwadi School	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	Bulbuls Play School	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	Euro Kids	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Euro Kids	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	Fastrackids	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	Funkids Pre School	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	Global Activities	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Global Activities	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Guru Narayan Night High School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	Guruhar Krishna High School	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	Guruhar Krishna High School	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	Hans Bhugra High School	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Jamatul Muslimeen Golibar	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Jamiya Masudiya Razviya	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Joyland Nursery & Play School	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	Kalina BMC Marathi School	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Kanya Vidya Mandir	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	Kims Nursery	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Kudos Kids Primary School	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Kudos Kids Secondary School	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Lilavatibai Podar Senior Secondary I S C A School & B School	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Lilavatibai Podar Senior Secondary I S C A School & B School	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Lilavatibai Podar Senior Secondary School Isc A & B School-Entrance 1	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Little Angels English School	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	Little Angels English School	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	Little Angels English School	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	Little Angles Pre Primary School	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Little Flower Academy	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Little Flower Nursery & Play School	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	Little Star Nursery	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	Little Wonder Pre-Primary	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	Lovedale Play School	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	Madarsa Chistiya Talimul Quraan	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	Madarsa Islamia Gulzarr Mustafa	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	Madarsa Mohammedian	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	Mary Immaculate Girls High School	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	Matoshri Shri Mahadevi Anandilal Ganesh Podar High School	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	Maulana Azad Urdu High School	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	Nariyalwadi Shala Sankul	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	New Model English High School	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	Panbai International School	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Patuck Tech High School & JR College-Gate 3	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Podar Education Complex-Entrance 4	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Podar Education Complex-Entrance 4	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	Podar Education Complex-Entrance 5	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Podar International School	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	Podar International School	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	Podar Jumbo Kids Plus	</td>	<td>	54	</td>	</tr>
+<tr>	<td>	Podar Jumbo Kids		<td>	55	</td>	</tr>
+<tr>	<td>	Podar Jumbo Kids		<td>	56	</td>	</tr>
+<tr>	<td>	Prabhat Colony Higher Secondary Marathi School 1		<td>	57	</td>	</tr>
+<tr>	<td>	Prajapita Brahma Kumaris Ishwariya Vishwa Vidyalaya		<td>	58	</td>	</tr>
+<tr>	<td>	Public High School		<td>	59	</td>	</tr>
+<tr>	<td>	R N Podar School-Cbse		<td>	60	</td>	</tr>
+<tr>	<td>	Raje Sambhaji JR Col of Sci & Com		<td>	61	</td>	</tr>
+<tr>	<td>	Raje Sambhaji Vidyalaya		<td>	62	</td>	</tr>
+<tr>	<td>	Rameshwar Vidya Mandir		<td>	63	</td>	</tr>
+<tr>	<td>	Reliance Energy Child Day Care Ctr		<td>	64	</td>	</tr>
+<tr>	<td>	Rev C F Andrews High School		<td>	65	</td>	</tr>
+<tr>	<td>	Rose Manor High School		<td>	66	</td>	</tr>
+<tr>	<td>	S E C Day School		<td>	67	</td>	</tr>
+<tr>	<td>	S Padmanabhan Pre-Primary School		<td>	68	</td>	</tr>
+<tr>	<td>	Sailani Education Society		<td>	69	</td>	</tr>
+<tr>	<td>	Samarth Vidyalaya		<td>	70	</td>	</tr>
+<tr>	<td>	Sane Guruji Vidya Mandir		<td>	71	</td>	</tr>
+<tr>	<td>	Sane Guruji Vidya Mandir		<td>	72	</td>	</tr>
+<tr>	<td>	Santacruz High Secondary School		<td>	73	</td>	</tr>
+<tr>	<td>	Santacruz Mumbai Pry Urdu School		<td>	74	</td>	</tr>
+<tr>	<td>	Santacruz Municipal School		<td>	75	</td>	</tr>
+<tr>	<td>	Santacruz West Municipal Gujarati School		<td>	76	</td>	</tr>
+<tr>	<td>	Santacruz West Municipal Hindi School		<td>	77	</td>	</tr>
+<tr>	<td>	Santacruz West Municipal Kannada School		<td>	78	</td>	</tr>
+<tr>	<td>	Santacruz West Municipal Tamil School		<td>	79	</td>	</tr>
+<tr>	<td>	Sheth Chimanlal Nathuram High School		<td>	80	</td>	</tr>
+<tr>	<td>	St Anthony High School		<td>	81	</td>	</tr>
+<tr>	<td>	St Charles Convent		<td>	82	</td>	</tr>
+<tr>	<td>	St Charles High School		<td>	83	</td>	</tr>
+<tr>	<td>	St Lawrence School-Entrance 1		<td>	84	</td>	</tr>
+<tr>	<td>	St Lawrence School		<td>	85	</td>	</tr>
+<tr>	<td>	St Mary's High School & Junior College		<td>	86	</td>	</tr>
+<tr>	<td>	St Mary's High School & Junior College		<td>	87	</td>	</tr>
+<tr>	<td>	St Mery's High School		<td>	88	</td>	</tr>
+<tr>	<td>	St Teresa Convent High School		<td>	89	</td>	</tr>
+<tr>	<td>	Sunrise School		<td>	90	</td>	</tr>
+<tr>	<td>	Sunrise School		<td>	91	</td>	</tr>
+<tr>	<td>	The Borromeo Garden		<td>	92	</td>	</tr>
+<tr>	<td>	The Tree House Playgroup & Nursery		<td>	93	</td>	</tr>
+<tr>	<td>	The Tree House		<td>	94	</td>	</tr>
+<tr>	<td>	The Tree House		<td>	95	</td>	</tr>
+<tr>	<td>	Tiny Toys Academy		<td>	96	</td>	</tr>
+<tr>	<td>	Vakola BMC School		<td>	97	</td>	</tr>
+<tr>	<td>	Vakola English School		<td>	98	</td>	</tr>
+<tr>	<td>	Vakola M N P Shala Sankul		<td>	99	</td>	</tr>
+<tr>	<td>	Vikas Ratra Vidyalaya		<td>	100	</td>	</tr>
+<tr>	<td>	21st Century Achievers		<td>	101	</td>	</tr>
+<tr>	<td>	Fun Land Nursery & Play Group		<td>	102	</td>	</tr>
+<tr>	<td>	Gymboree		<td>	103	</td>	</tr>
+<tr>	<td>	Little Angel Nursery		<td>	104	</td>	</tr>
+<tr>	<td>	Playway Nursery Play School		<td>	105	</td>	</tr>
+<tr>	<td>	Pragati Mahila Kalyan Samiti		<td>	106	</td>	</tr>
+<tr>	<td>	Silva Brook Multiactivity Centre and Pre School		<td>	107	</td>	</tr>
+<tr>	<td>	Tiny Feet Playgroup & Nursery		<td>	108	</td>	</tr>
+<tr>	<td>	Tiny Feet Playgroup & Nursery		<td>	109	</td>	</tr>
+<tr>	<td>	Unique Academy Nursery		<td>	110	</td>	</tr>
+<tr>	<td>	Vuz International Pre School		<td>	111	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
