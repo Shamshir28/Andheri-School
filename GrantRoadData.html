@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Grant Road</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+							
+<tr>	<td>	A I I English Pre-Primary School	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	Aditya Birla World Academy	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	Angles Nursery Class	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	Ashok High School	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	B K M High School	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	B M C Prathamik School	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	BMC School	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	Bai Ratanbai F Pavri High School	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	Balak Vrinda School Nursery & Primary	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Balaram Street Municipal Vocational Upper Primary Urdu School	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	Balwadi	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	Bilal School	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	Blooming Buds	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Blooming Buds	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Bright Star Pre-School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	British Orchid Playgroup & Nursery	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	Buzee Beez Play Group & Nursery	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	Buzee Beez Play Group & Nursery	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Cama Montessori & Primary School	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Children's Nook Activity Centre	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Chinmaya Nursery School & Kalamandir	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	D T Vataniyah Tulips Playgroup & Nursery	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Darul-Uloom Imdadia	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	Diamond Jubilee Girls High School	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Diamond Jubilee HS for Girls	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Divinetouch	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Emanwada Municipal Urdu School	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Fellowship School	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Funschool	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Funskool	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	Girton High School	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	Goldeul M N P School	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	J R Municipal Sec School	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Jagannath Shankarsheth Chowk Primary School	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Jalbhai Dorabji Bharda High School	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	Jingle Bell	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	John Wilson Education	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	Kids Quest Academy	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	Kinderlands	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	Kusumben Patel Gujrati Balwadi	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	Little Angels Academy	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	Little Palms School	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	Little Star Nursery School	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	Little Star Nursery School	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	Madrasa Anjuman E Hubbe Rasool	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	Madrasa E Mohammdia	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	Madrasa-E-Adab Talim-Ul-Quran	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Madrasa-E-Adab Talim-Ul-Quran	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Manu Prem School	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Mary Poppins Nursery & Play School	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	Masters Sitaldas Punwani Tutorial High School	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Merry Children Play School & Nursery	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	Merry Children Play School & Nursery	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	Muhammadiya High School	</td>	<td>	54	</td>	</tr>
+<tr>	<td>	New Activity School	</td>	<td>	55	</td>	</tr>
+<tr>	<td>	Nizampura Upper Primary Mun Urdu School	</td>	<td>	56	</td>	</tr>
+<tr>	<td>	Null Bazar	</td>	<td>	57	</td>	</tr>
+<tr>	<td>	Nullbazar School	</td>	<td>	58	</td>	</tr>
+<tr>	<td>	Our Own School	</td>	<td>	59	</td>	</tr>
+<tr>	<td>	Peek-A-Boo	</td>	<td>	60	</td>	</tr>
+<tr>	<td>	Playmore Nursery & Playgroup	</td>	<td>	61	</td>	</tr>
+<tr>	<td>	Queen Mary School	</td>	<td>	62	</td>	</tr>
+<tr>	<td>	RMM High School	</td>	<td>	63	</td>	</tr>
+<tr>	<td>	Ramabai Navrange Junior College of Education for Women	</td>	<td>	64	</td>	</tr>
+<tr>	<td>	Riising Spring Pre School	</td>	<td>	65	</td>	</tr>
+<tr>	<td>	Robert Money Technical High School & JR College	</td>	<td>	66	</td>	</tr>
+<tr>	<td>	Rti Montessori Children School	</td>	<td>	67	</td>	</tr>
+<tr>	<td>	Safa High School	</td>	<td>	68	</td>	</tr>
+<tr>	<td>	Sardar High School	</td>	<td>	69	</td>	</tr>
+<tr>	<td>	Sayanori Play Group Nursery	</td>	<td>	70	</td>	</tr>
+<tr>	<td>	School of Etiquette	</td>	<td>	71	</td>	</tr>
+<tr>	<td>	School of Etiquette	</td>	<td>	72	</td>	</tr>
+<tr>	<td>	School of Etiquette	</td>	<td>	73	</td>	</tr>
+<tr>	<td>	School of Etiquette	</td>	<td>	74	</td>	</tr>
+<tr>	<td>	School of Etiquette	</td>	<td>	75	</td>	</tr>
+<tr>	<td>	School of Etiquette	</td>	<td>	76	</td>	</tr>
+<tr>	<td>	Seth Dharamsey Govindaji Thackersey High School	</td>	<td>	77	</td>	</tr>
+<tr>	<td>	Seva Sadan English Medium Pre-Primary School	</td>	<td>	78	</td>	</tr>
+<tr>	<td>	Seva Sadan Societys Girls High School	</td>	<td>	79	</td>	</tr>
+<tr>	<td>	Shantadevi Banerjee Vidyalaya	</td>	<td>	80	</td>	</tr>
+<tr>	<td>	Sharada Mandir High School	</td>	<td>	81	</td>	</tr>
+<tr>	<td>	Sharda Junior College of Commerce	</td>	<td>	82	</td>	</tr>
+<tr>	<td>	Sheth Hirachand Gumanji Jain Boarding School	</td>	<td>	83	</td>	</tr>
+<tr>	<td>	Sheth Hirachand-Gumanji Jain Boarding School	</td>	<td>	84	</td>	</tr>
+<tr>	<td>	Shri Manubhai Maneklal Sheth JR College of Arts & Science	</td>	<td>	85	</td>	</tr>
+<tr>	<td>	Shri Manubhai Maneklal Sheth JR College of Arts & Science	</td>	<td>	86	</td>	</tr>
+<tr>	<td>	Sind Model English Primary School	</td>	<td>	87	</td>	</tr>
+<tr>	<td>	Small Steps	</td>	<td>	88	</td>	</tr>
+<tr>	<td>	Small Steps	</td>	<td>	89	</td>	</tr>
+<tr>	<td>	St Columba School	</td>	<td>	90	</td>	</tr>
+<tr>	<td>	Sundatta High School	</td>	<td>	91	</td>	</tr>
+<tr>	<td>	Super Kidz	</td>	<td>	92	</td>	</tr>
+<tr>	<td>	Taiyebiyah Girls High School	</td>	<td>	93	</td>	</tr>
+<tr>	<td>	The Big Umbrella	</td>	<td>	94	</td>	</tr>
+<tr>	<td>	The Bombay International School	</td>	<td>	95	</td>	</tr>
+<tr>	<td>	The Brilliant	</td>	<td>	96	</td>	</tr>
+<tr>	<td>	The Brilliant	</td>	<td>	97	</td>	</tr>
+<tr>	<td>	The First Step	</td>	<td>	98	</td>	</tr>
+<tr>	<td>	The Grant Road Central High School	</td>	<td>	99	</td>	</tr>
+<tr>	<td>	The New Era School-Entrance 1	</td>	<td>	100	</td>	</tr>
+<tr>	<td>	The New Era School	</td>	<td>	101	</td>	</tr>
+<tr>	<td>	The Toddlers Club	</td>	<td>	102	</td>	</tr>
+<tr>	<td>	The Toddlers Club	</td>	<td>	103	</td>	</tr>
+<tr>	<td>	Tree House	</td>	<td>	104	</td>	</tr>
+<tr>	<td>	Union High School	</td>	<td>	105	</td>	</tr>
+<tr>	<td>	Universal School Tardeo	</td>	<td>	106	</td>	</tr>
+<tr>	<td>	Valiram Bherumal Melwani Model High School	</td>	<td>	107	</td>	</tr>
+<tr>	<td>	Vanita Vishram Secondary School	</td>	<td>	108	</td>	</tr>
+<tr>	<td>	West Khetwadi BMC School	</td>	<td>	109	</td>	</tr>
+<tr>	<td>	White Peacock Dance Studio	</td>	<td>	110	</td>	</tr>
+<tr>	<td>	smart Beginners	</td>	<td>	111	</td>	</tr>
+<tr>	<td>	smart Beginners	</td>	<td>	112	</td>	</tr>
+<tr>	<td>	smart Kids	</td>	<td>	113	</td>	</tr>
+<tr>	<td>	smart Kids	</td>	<td>	114	</td>	</tr>
+<tr>	<td>	smart Kids	</td>	<td>	115	</td>	</tr>
+<tr>	<td>	smart Kids	</td>	<td>	116	</td>	</tr>
+<tr>	<td>	Blooming Buds Pre School		<td>	117	</td>	</tr>
+<tr>	<td>	Junior Kidz		<td>	118	</td>	</tr>
+<tr>	<td>	Kiddies Dreamland Corner		<td>	119	</td>	</tr>
+<tr>	<td>	Ruby Nursery		<td>	120	</td>	</tr>
+<tr>	<td>	Safa High School		<td>	121	</td>	</tr>
+<tr>	<td>	Tiny Blossoms Pre-Primary School		<td>	122	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
