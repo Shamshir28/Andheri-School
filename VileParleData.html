@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Vile Parle & Juhu</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+
+							
+<tr>	<td>	Adhiya College of Polytechnic	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	Arya Vidya Mandir	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	Besant Montessori School	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	Bhaktivedanta Institute	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	Bhaktivedanta Institute	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	Billabong High International School	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	Dilkhush Special School	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	Ecole Mondiale World School	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	Holy Cross High School	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Ishwarbhai Jivabhai Patel High School	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	Jamnabai Narsee School-Gate No 2	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	Jamnabai Narsee School-Gate No 3	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	Jamnabai Narsee School-Gate No 4	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Jamnabai Narsee School-Gate No 5	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Jamnabai Narsee School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	Juhu Gandhigram Mahapalika Marathi School	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	Juhu Gandhigram Mahapalika School	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	Juhu Tara Municipal School	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Kalyanji K Rajpopat School	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Kamala Dharamshi Narsee Shruti School	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Kamla Raheja Vidyanidhi Junior College of Commerce	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	Kamla Raheja Vidyanidhi Junior College of Commerce	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Kamla Raheja Vidyanidhi Junior College of Vocation Studies	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	Kamla Raheja Vidyanidhi Junior College of Vocation Studies	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Late Anant Janardan Mhatre JR College of Commerce	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Malti Jayant Dalal High School	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Maneckji Cooper Education Trust School	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Maneckji Cooper Education Trust School	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Muljibhai Madhwani Meml Girls H S	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Play-N-Learn	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	Podar School	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	Podar School	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	Podar School	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Prabhavati Padamshi Soni International Junior College-Gate No 4	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Prabhavati Padamshi Soni International Junior College-Gate No 4	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	Ramanlal Nagindas Shah High School	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	Ramniklal C Valia Lions Juhu Vidyanidhi Balkunj	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	Rims International School & Junior College	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	Shri Bhanbai Nenshi Mahila Vidyalaya	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	Shri Siddhivinayak Vidyanidhi Shishu Mandir Marathi	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	St Joseph's High School-Gate 1	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	St Joseph's High School-Gate 2	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	St Joseph's High School-Gate 3	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	Taraben Master English School	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	The Juhu Parle Education Society-Gate No 2	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	The Learning Experience	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	The Learning Experience	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Utpal Shanghvi School-Gate No 3	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Vidyanidhi Durga Prasad English School Primary	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Vidyanidhi Parekh High School English Medium Secondary	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	Alphakids Pre School	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Globe Toters	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	Globe Toters	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	Kangaroo Kids	</td>	<td>	54	</td>	</tr>
+<tr>	<td>	Kokatoo	</td>	<td>	55	</td>	</tr>
+<tr>	<td>	Lilavati & Ambaben Khandwalla English Pre-Primary School	</td>	<td>	56	</td>	</tr>
+<tr>	<td>	Magic Touch	</td>	<td>	57	</td>	</tr>
+<tr>	<td>	Miniland	</td>	<td>	58	</td>	</tr>
+<tr>	<td>	SMT Bhagwati Nanak Pre-Primary School	</td>	<td>	59	</td>	</tr>
+<tr>	<td>	Sadhvi Savitribai Phule Balwadi	</td>	<td>	60	</td>	</tr>
+<tr>	<td>	Spring Buds	</td>	<td>	61	</td>	</tr>
+<tr>	<td>	The Tree House	</td>	<td>	62	</td>	</tr>
+<tr>	<td>	Abhinav Shikshan Samaj Lions Airport Vidya Sahakar High School	</td>	<td>	63	</td>	</tr>
+<tr>	<td>	Airport High School & Junior College of Commerce & Science	</td>	<td>	64	</td>	</tr>
+<tr>	<td>	Airport High School & Junior College of Commerce & Science	</td>	<td>	65	</td>	</tr>
+<tr>	<td>	Brujmohan Laxminarayan Ruia Bahudeshiya High School	</td>	<td>	66	</td>	</tr>
+<tr>	<td>	Butterflies	</td>	<td>	67	</td>	</tr>
+<tr>	<td>	Disha Karnabadhir Vidyalaya	</td>	<td>	68	</td>	</tr>
+<tr>	<td>	Disha Karnabadhir Vidyalaya	</td>	<td>	69	</td>	</tr>
+<tr>	<td>	Dixit Road Municipal School	</td>	<td>	70	</td>	</tr>
+<tr>	<td>	Dixit Road School & Sci Junior Col	</td>	<td>	71	</td>	</tr>
+<tr>	<td>	Dixit Road School	</td>	<td>	72	</td>	</tr>
+<tr>	<td>	Excel Kids	</td>	<td>	73	</td>	</tr>
+<tr>	<td>	Flamingos Play School & Nursery	</td>	<td>	74	</td>	</tr>
+<tr>	<td>	Kids Zone	</td>	<td>	75	</td>	</tr>
+<tr>	<td>	Kids Zone	</td>	<td>	76	</td>	</tr>
+<tr>	<td>	Kum Binaben Kapadia Junior College of Commerce	</td>	<td>	77	</td>	</tr>
+<tr>	<td>	Little Flies Preschool	</td>	<td>	78	</td>	</tr>
+<tr>	<td>	Little Flies Preschool	</td>	<td>	79	</td>	</tr>
+<tr>	<td>	Nava Samaj Mandals Nitin Godiwala Junior College of Commerce	</td>	<td>	80	</td>	</tr>
+<tr>	<td>	New Era Kids	</td>	<td>	81	</td>	</tr>
+<tr>	<td>	Orion School	</td>	<td>	82	</td>	</tr>
+<tr>	<td>	Orion School	</td>	<td>	83	</td>	</tr>
+<tr>	<td>	Parle Tilak Vidyalaya English Medium School	</td>	<td>	84	</td>	</tr>
+<tr>	<td>	Parle Tilak Vidyalaya English Medium	</td>	<td>	85	</td>	</tr>
+<tr>	<td>	Parle Tilak Vidyalaya Marathi Medium-Entrance 1	</td>	<td>	86	</td>	</tr>
+<tr>	<td>	Parle Tilak Vidyalaya Marathi Medium	</td>	<td>	87	</td>	</tr>
+<tr>	<td>	Phonic smart	</td>	<td>	88	</td>	</tr>
+<tr>	<td>	Pink Rose Nursery	</td>	<td>	89	</td>	</tr>
+<tr>	<td>	Prarthana Samaj High School	</td>	<td>	90	</td>	</tr>
+<tr>	<td>	Prarthana Samaj High School	</td>	<td>	91	</td>	</tr>
+<tr>	<td>	Ramabai Paranjape Balmandir	</td>	<td>	92	</td>	</tr>
+<tr>	<td>	Ramabai Paranjape Balmandir	</td>	<td>	93	</td>	</tr>
+<tr>	<td>	SMT Hirben Manilal Nanavati Vidya Mandir	</td>	<td>	94	</td>	</tr>
+<tr>	<td>	SMT Hirben Manilal Nanavati Vidya Mandir	</td>	<td>	95	</td>	</tr>
+<tr>	<td>	Sau Usha Jamnerkar Mukh-Dhwani School	</td>	<td>	96	</td>	</tr>
+<tr>	<td>	Shahaji Raje Marg Municipal School	</td>	<td>	97	</td>	</tr>
+<tr>	<td>	Shree Bhaidas Dharsibhai Bhuta High School	</td>	<td>	98	</td>	</tr>
+<tr>	<td>	Shree Chhatraprti Shivaji Madhyamik & Uchcha Madyamik Vidyalaya	</td>	<td>	99	</td>	</tr>
+<tr>	<td>	Shri Bhaidas Dharsibhai Bhuta High School	</td>	<td>	100	</td>	</tr>
+<tr>	<td>	Shri Madhavrao Bhagwat High School and Junior College	</td>	<td>	101	</td>	</tr>
+<tr>	<td>	Shri Navinchandra Popatlal Kapadia Vidya Mandir	</td>	<td>	102	</td>	</tr>
+<tr>	<td>	Starz Academy	</td>	<td>	103	</td>	</tr>
+<tr>	<td>	The Greater Mumbai Education Societys High School & Junior College	</td>	<td>	104	</td>	</tr>
+<tr>	<td>	Vile Parle Mahila Sangh English Primary School	</td>	<td>	105	</td>	</tr>
+<tr>	<td>	Born Free	</td>	<td>	106	</td>	</tr>
+<tr>	<td>	Born Free	</td>	<td>	107	</td>	</tr>
+<tr>	<td>	Bulbul Balwadi & Play Group	</td>	<td>	108	</td>	</tr>
+<tr>	<td>	Guys & Dolls Play Group Nursery	</td>	<td>	109	</td>	</tr>
+<tr>	<td>	KDG Play School	</td>	<td>	110	</td>	</tr>
+<tr>	<td>	Kiddy Land Play Group & Nursery	</td>	<td>	111	</td>	</tr>
+<tr>	<td>	Kids Planet Play Group	</td>	<td>	112	</td>	</tr>
+<tr>	<td>	Little Leaps	</td>	<td>	113	</td>	</tr>
+<tr>	<td>	Pannalal Lohe Smruti Day Care Centre	</td>	<td>	114	</td>	</tr>
+<tr>	<td>	Podar Jumbo Kids Plus	</td>	<td>	115	</td>	</tr>
+<tr>	<td>	Ra Butterflies Play Group	</td>	<td>	116	</td>	</tr>
+<tr>	<td>	Ra Butterflies Play Group		<td>	117	</td>	</tr>
+<tr>	<td>	SMT H M N E High School		<td>	118	</td>	</tr>
+<tr>	<td>	SMT Radhabai Fadnis Balmandir		<td>	119	</td>	</tr>
+<tr>	<td>	Shree Krishna Utkarsh Mandal-Balwadi		<td>	120	</td>	</tr>
+<tr>	<td>	Super Kiidz		<td>	121	</td>	</tr>
+<tr>	<td>	Super Kiidz		<td>	122	</td>	</tr>
+<tr>	<td>	The Tree House		<td>	123	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
