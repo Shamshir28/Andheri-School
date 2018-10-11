@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Lower Parel</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+							
+<tr>	<td>	BMC N M Joshi School	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	BMC Primary School Talchekar Vadi	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	Blooming Buds School	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	Blooming Buds	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	Dr Babasaheb Ambedkar School	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	Ganpatrao Kadam Marg BMC School	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	Globmill Pasej Marathi School	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	JBC Pan International Sch Academy	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	Kamaladevi Gobindram Tahaliyani High School	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Little's Nursery School	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	Maharashtra High School No 1	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	Maratha High School	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	SVS English School	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Sahakat Night High School & JR College	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Sitaram Mill Compound School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	Watsaly Dham Vidhyamandir Balwadi	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	Balmandir	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	Little Angels Play Center & Nursery	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Little Angels	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Little Star Nursery	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Aarambh the Beginning	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	Aarambh the Beginning	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Abhyudaya Nagar Z P School	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	B M C Supari Baugh School	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Brihanmumbai Mahanagarpalika Madhyamik Shala	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Central Railway Employees High School & Junior College	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Central Railway Mixed Middle School Parel	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Chandika Sansthan Vasahat Prathamik Marathi Shala	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Clever Kids Nursery	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Clever Kids Nursery	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	Clever Kids Nursery	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	Clever Kids Nursery	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	Dr Shirodkar High School	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Dr Shirodkar High School	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Flora Playgroup & Nursery	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	Gokhale Education Society Parel Kendra Pre Primary School	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	Gokhale Education Society Parel Kendra Primary School	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	Ingetraun Naik Bal Mandir	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	JBCN International School	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	Jagganath Bhatankar Marg Higher Secondary MNP Marathi School	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	Kangaroo Kids	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	Kids World	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	Mahatma Phule Technical School and Junior College	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	N M Joshi Vidya Sankul	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	Navbharat Vidyalaya	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	Parel Bhoiwada School-No 1	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	Parel English School	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Parel Night High School & Junior College	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Parel Poyabawadi Municipal Marathi School-No 1	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Parel Poyabawadi Municipal Primary Gujarati School	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	Parel Village Balwadi	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Poyabawadi Municipal Primary English School	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	Poyabawadi Municipal Primary Hindi School	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	Saibaba Primary School	</td>	<td>	54	</td>	</tr>
+<tr>	<td>	Shiv Shankar Seva Manal Balwadi	</td>	<td>	55	</td>	</tr>
+<tr>	<td>	Shree Tulsi Hindi Madhyamik Vidyalaya & Kanistha Mahavidyalaya	</td>	<td>	56	</td>	</tr>
+<tr>	<td>	Siddhant Bal Mandir	</td>	<td>	57	</td>	</tr>
+<tr>	<td>	Siddhant Bal Mandir	</td>	<td>	58	</td>	</tr>
+<tr>	<td>	Sir Jamsetjee Jejeebhoy Parel Primary School	</td>	<td>	59	</td>	</tr>
+<tr>	<td>	Social Service League & Junior College	</td>	<td>	60	</td>	</tr>
+<tr>	<td>	Social Service League Bal Mandir	</td>	<td>	61	</td>	</tr>
+<tr>	<td>	Social Service League English Medium School	</td>	<td>	62	</td>	</tr>
+<tr>	<td>	Social Service League Primary School	</td>	<td>	63	</td>	</tr>
+<tr>	<td>	Sweet Hearts Play Group & Nursery	</td>	<td>	64	</td>	</tr>
+<tr>	<td>	Sweet Hearts Play Group & Nursery	</td>	<td>	65	</td>	</tr>
+<tr>	<td>	Sweet Hearts	</td>	<td>	66	</td>	</tr>
+<tr>	<td>	Sweet Hearts	</td>	<td>	67	</td>	</tr>
+<tr>	<td>	The Milind Night High School & Junior College	</td>	<td>	68	</td>	</tr>
+<tr>	<td>	Tiny tot	</td>	<td>	69	</td>	</tr>
+<tr>	<td>	Triveni Sangam Municipal School	</td>	<td>	70	</td>	</tr>
+<tr>	<td>	Balwadi Suparibaugh	</td>	<td>	71	</td>	</tr>
+<tr>	<td>	Daffodils Play Group & Nursery	</td>	<td>	72	</td>	</tr>
+<tr>	<td>	Ekatmik Balvikas Seva Yojna Anganwadi-No 53	</td>	<td>	73	</td>	</tr>
+<tr>	<td>	Fairys Land Playgroup & Nursery	</td>	<td>	74	</td>	</tr>
+<tr>	<td>	Little Wonders	</td>	<td>	75	</td>	</tr>
+<tr>	<td>	Little Wonders	</td>	<td>	76	</td>	</tr>
+<tr>	<td>	Podar Jumbo Kids Plus	</td>	<td>	77	</td>	</tr>
+<tr>	<td>	Sunraj Academy	</td>	<td>	78	</td>	</tr>
+<tr>	<td>	Sunraj Academy	</td>	<td>	79	</td>	</tr>
+<tr>	<td>	Suzie's Shining Star Nursery	</td>	<td>	80	</td>	</tr>
+<tr>	<td>	The Tree House	</td>	<td>	81	</td>	</tr>
+<tr>	<td>	Tiny Tigers Playgroup & Nursery	</td>	<td>	82	</td>	</tr>
+<tr>	<td>	Tiny Tigers Playgroup & Nursery	</td>	<td>	83	</td>	</tr>
+<tr>	<td>	Tiny Tigers Playgroup & Nursery	</td>	<td>	84	</td>	</tr>
+<tr>	<td>	Tiny Tots Nursery	</td>	<td>	85	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
