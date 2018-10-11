@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Mazgaon</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+							
+<tr>	<td>	Bapurao Jagtap Marg Upper Primary Municipal Urdu Shala	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	Baburao Jagtap Marg Upper Primary Mun Urdu School	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	Activity High School	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	Cumballa Hill High School	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	Greenlawns High School	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	National Open School	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	Pranjali International School	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	Pranjali International School	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	S PJ Sadhana School	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Sophia Nursery School	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	The British Orchid	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	The Miniland School	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	The Miniland School	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Villa Theresa Convent	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Villa Theresa High School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	BMC Marathi High School	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	BMC Mount Road Gujrati Primary School	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	BMC Tadwadi MNP Uccha Prathamik Hindi Shala	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Bal Vikas Shishu Mandir	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Diamond Jubilee High School	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Divine Mercy	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	Divine Mercy	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Fazlani Lacademie Globale School	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	Infant Jesus Nursery	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Infant Jesus Nursery	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Infant Jesus Nursery	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Islamic International School	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Kids Kingdom	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Kids Kingdom	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Mazgoan MNP School	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	Motisha Lane BMC Hindi School	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	Motisha Lane Uccha Prathamik Marathi Shala	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	Motisha Lane Uccha Prathamik Municipal Urdu Shala	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Nawab Tank Road BMC Primary School	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Rosary High School	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	ST. Peter's High School	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	Sir Elly Kadoorie School & Junior College	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	St Annes High School	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	St Isabel's High School	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	St Joseph Pre Primary School	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	St Mary's School	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	St Marys High School SSC	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	St Peter's School	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	St Peters School	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	The British Orchid	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	The Tree House	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	Wadibunder Uccha Prathamik Municipal Urdu Shala	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Dar Ul Madinah	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Dar Ul Madinah	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Dar Ul Madinah	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	Early Wing Playgroup Nursery	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Kiddyland Nursery School	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	The Brilliant	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	The Brilliant	</td>	<td>	54	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
