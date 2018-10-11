@@ -1,438 +1,69 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
 
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
+</b></font>
+<title>
+</title>
 
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-
-<h2>Andheri</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:60%;">School</th>
-    <th style="width:40%;">ID</th>
-  </tr>
-<tr>	<td>	Aayushi Play Group & Nursery	</td>	<td>	2	</td>	</tr>
-<tr>	<td>	Acharya Narendradev Vidya Mandir-Entrance 1	</td>	<td>	3	</td>	</tr>
-<tr>	<td>	Achrya Narendra Vidyamandir			4	</td>	</tr>
-<tr>	<td>	Ahinav Education Society School			5	</td>	</tr>
-<tr>	<td>	Ajmera Global School			6	</td>	</tr>
-<tr>	<td>	Anandibai Damodar Kale Vidyalaya			7	</td>	</tr>
-<tr>	<td>	Anandrao Pawar Vidyalaya			8	</td>	</tr>
-<tr>	<td>	BMC Poisar School Borivali W			9	</td>	</tr>
-<tr>	<td>	BMC Urdu School			10	</td>	</tr>
-<tr>	<td>	Believe			11	</td>	</tr>
-<tr>	<td>	Bharat Jatiya Vidya Mandir			12	</td>	</tr>
-<tr>	<td>	Bima Nagar Education Society Junior College			13	</td>	</tr>
-<tr>	<td>	Borivali BMC Madyamik School			14	</td>	</tr>
-<tr>	<td>	Bruhanmumbai M C Dattapada School			15	</td>	</tr>
-<tr>	<td>	Bruhnmumbai Municipal School			16	</td>	</tr>
-<tr>	<td>	Buttercups Nursery			17	</td>	</tr>
-<tr>	<td>	Cosmos High School			18	</td>	</tr>
-<tr>	<td>	Cradle To Crayon Preschool			19	</td>	</tr>
-<tr>	<td>	Dattapada Gujarati School			20	</td>	</tr>
-<tr>	<td>	Dattapada Hindi School			21	</td>	</tr>
-<tr>	<td>	Dattapada Marathi School			22	</td>	</tr>
-<tr>	<td>	Divine Ark School			23	</td>	</tr>
-<tr>	<td>	Divine Ark School			24	</td>	</tr>
-<tr>	<td>	Divineland and Pre Primary School			25	</td>	</tr>
-<tr>	<td>	Don Bosco High School			26	</td>	</tr>
-<tr>	<td>	Dr Pillai Global Academy-Entrance 2			27	</td>	</tr>
-<tr>	<td>	Dr Pillai Global Academy			28	</td>	</tr>
-<tr>	<td>	Dr Pillai Global Academy			29	</td>	</tr>
-<tr>	<td>	Dr S Radhakrishnan Vidyalaya			30	</td>	</tr>
-<tr>	<td>	Eksar Talepakhadi Municipal School			31	</td>	</tr>
-<tr>	<td>	Fairyland Learning Redefined			32	</td>	</tr>
-<tr>	<td>	Harchand Lokhande Madhyamik School			33	</td>	</tr>
-<tr>	<td>	Hello Kids-Nest			34	</td>	</tr>
-<tr>	<td>	Hello Kids-Nest			35	</td>	</tr>
-<tr>	<td>	Hello Kids-Nest			36	</td>	</tr>
-<tr>	<td>	Hello Kids			37	</td>	</tr>
-<tr>	<td>	Hello Kids			38	</td>	</tr>
-<tr>	<td>	Hello Kids			39	</td>	</tr>
-<tr>	<td>	Himalaya High School			40	</td>	</tr>
-<tr>	<td>	Ira International School			41	</td>	</tr>
-<tr>	<td>	Jijamata Madhyamik Vidhyalay Va Kanisht Mahavidhyalay			42	</td>	</tr>
-<tr>	<td>	Kids Galaxy Playgroup & Nursery			43	</td>	</tr>
-<tr>	<td>	Kids Kutir			44	</td>	</tr>
-<tr>	<td>	Kids Kutir			45	</td>	</tr>
-<tr>	<td>	Kids Toy Library			46	</td>	</tr>
-<tr>	<td>	Kidzee			47	</td>	</tr>
-<tr>	<td>	Kum Purnima V Valia English Medium K G Classes			48	</td>	</tr>
-<tr>	<td>	Lalji Trikamji Hindi School			49	</td>	</tr>
-<tr>	<td>	Lion Juhu Ku Sudha V Patel Gujarati Balmandir			50	</td>	</tr>
-<tr>	<td>	Lion Juhu Ku Sudha V Patil Gujarati Balmandir			51	</td>	</tr>
-<tr>	<td>	Little Kingdom Pre-School Academy			52	</td>	</tr>
-<tr>	<td>	Little Wings Play			53	</td>	</tr>
-<tr>	<td>	Little Wings Play			54	</td>	</tr>
-<tr>	<td>	M J Junior College of Science			55	</td>	</tr>
-<tr>	<td>	M K N Bhatia High School			56	</td>	</tr>
-<tr>	<td>	Magathane BMC Marathi School No-2			57	</td>	</tr>
-<tr>	<td>	Magathane BMC Marathi School No1			58	</td>	</tr>
-<tr>	<td>	Manahar Hariram Chogake Vidyalaya			59	</td>	</tr>
-<tr>	<td>	Manas Junior College of Commerce			60	</td>	</tr>
-<tr>	<td>	Mangubhai Dattani Vidyalaya			61	</td>	</tr>
-<tr>	<td>	Manohar Hariram Chogale Vidyalaya			62	</td>	</tr>
-<tr>	<td>	Mary Immaculate Girls Primary School			63	</td>	</tr>
-<tr>	<td>	Mary Immaculate Girls School			64	</td>	</tr>
-<tr>	<td>	Mary Immaculate Girls School			65	</td>	</tr>
-<tr>	<td>	Matoshree Kashiben Vrajlal Valia International Vidyalaya			66	</td>	</tr>
-<tr>	<td>	Matushri J G Dattani Balmandir			67	</td>	</tr>
-<tr>	<td>	Matushri J J Dattani Balmandir			68	</td>	</tr>
-<tr>	<td>	Matushri Kashiben Vrajlal Valia International Vidyalaya Cbse			69	</td>	</tr>
-<tr>	<td>	Matushri Kashiben Vrajlal Valia International Vidyalaya Cbse			70	</td>	</tr>
-<tr>	<td>	Matushri Velbai Velji Gala Primary School			71	</td>	</tr>
-<tr>	<td>	Matushri Velbai Velji Gala Primary School			72	</td>	</tr>
-<tr>	<td>	Matushri Vinibhai Valia Gujarati Primary School			73	</td>	</tr>
-<tr>	<td>	Morning Dales			74	</td>	</tr>
-<tr>	<td>	Nalanda English High School			75	</td>	</tr>
-<tr>	<td>	Nalanda Night School			76	</td>	</tr>
-<tr>	<td>	Nalanda School			77	</td>	</tr>
-<tr>	<td>	Namdar Gopal Krishna Gokhale HS			78	</td>	</tr>
-<tr>	<td>	Narayana E-Techno School			79	</td>	</tr>
-<tr>	<td>	Narayana E-Techno School			80	</td>	</tr>
-<tr>	<td>	Narayana E-Techno School			81	</td>	</tr>
-<tr>	<td>	Our Lady of Remedy High School			82	</td>	</tr>
-<tr>	<td>	Our Lady of Vailankanni High School			83	</td>	</tr>
-<tr>	<td>	Our Lady of Vailankanni High School			84	</td>	</tr>
-<tr>	<td>	Pace Junior Science College			85	</td>	</tr>
-<tr>	<td>	Pearson			86	</td>	</tr>
-<tr>	<td>	Pearson			87	</td>	</tr>
-<tr>	<td>	Pearson			88	</td>	</tr>
-<tr>	<td>	Peridot International Academy Nursery			89	</td>	</tr>
-<tr>	<td>	Peridot International Academy Nursery			90	</td>	</tr>
-<tr>	<td>	Play Learn			91	</td>	</tr>
-<tr>	<td>	Podar Jumbo Kids Plus			92	</td>	</tr>
-<tr>	<td>	Priya Darshani Shishu Vikasani			93	</td>	</tr>
-<tr>	<td>	R C Patel High School			94	</td>	</tr>
-<tr>	<td>	R C Patel High School			95	</td>	</tr>
-<tr>	<td>	R G Bajaria English Medium Primary School			96	</td>	</tr>
-<tr>	<td>	RR International JR College			97	</td>	</tr>
-<tr>	<td>	Rajendra Nagar School BMC School			98	</td>	</tr>
-<tr>	<td>	Ramkrishna High School			99	</td>	</tr>
-<tr>	<td>	Raspberry Playgroup Nursery			100	</td>	</tr>
-<tr>	<td>	Raspberry Playgroup Nursery			101	</td>	</tr>
-<tr>	<td>	Rustomjee Cambridge International School			102	</td>	</tr>
-<tr>	<td>	Rustomjee Cambridge Intl School			103	</td>	</tr>
-<tr>	<td>	Rustomjee International School & Junior College			104	</td>	</tr>
-<tr>	<td>	Rustomjee Junior College			105	</td>	</tr>
-<tr>	<td>	Rutav Nursery			106	</td>	</tr>
-<tr>	<td>	Ryan Public School			107	</td>	</tr>
-<tr>	<td>	S E International School			108	</td>	</tr>
-<tr>	<td>	S T Anne's High School			109	</td>	</tr>
-<tr>	<td>	SMT Jayaben Khot High School			110	</td>	</tr>
-<tr>	<td>	ST. Claret School			111	</td>	</tr>
-<tr>	<td>	ST. Francis School			112	</td>	</tr>
-<tr>	<td>	ST. Lawrence High School			113	</td>	</tr>
-<tr>	<td>	Sai Shishu Mandir			114	</td>	</tr>
-<tr>	<td>	Sailee International School			115	</td>	</tr>
-<tr>	<td>	Sailee Junior College			116	</td>	</tr>
-<tr>	<td>	Sant Dnyaneshwar Vidyalaya			117	</td>	</tr>
-<tr>	<td>	Setha Bhajanlal Rohra English School			118	</td>	</tr>
-<tr>	<td>	Setha Doulatram Mohandas High School			119	</td>	</tr>
-<tr>	<td>	Sheth G H Junior College of Commerce			120	</td>	</tr>
-<tr>	<td>	Sheth Gopali Hemraj High School & Junior College			121	</td>	</tr>
-<tr>	<td>	Sheth Gopalji Hemraj High School			122	</td>	</tr>
-<tr>	<td>	Sheth J J Gujarati Primary School			123	</td>	</tr>
-<tr>	<td>	Sheth Jadhavaji Jethabhai Pri School			124	</td>	</tr>
-<tr>	<td>	Sheth Kanji V Parekh Arts & Commerce Junior College			125	</td>	</tr>
-<tr>	<td>	Sheth M K High School			126	</td>	</tr>
-<tr>	<td>	Sheth M K Patel High School			127	</td>	</tr>
-<tr>	<td>	Sheth R G Bajaria English Medium Primary School			128	</td>	</tr>
-<tr>	<td>	Shimpoli M N P Marathi School			129	</td>	</tr>
-<tr>	<td>	Shir R G Bajaria English Medium Primary School			130	</td>	</tr>
-<tr>	<td>	Shishu Kunj			131	</td>	</tr>
-<tr>	<td>	Shishu Vikas Mandir			132	</td>	</tr>
-<tr>	<td>	Shivseva English School			133	</td>	</tr>
-<tr>	<td>	Shree Mumbadevi Vidya Niketan English Medium School			134	</td>	</tr>
-<tr>	<td>	Shree Mumbadevi Vidya Niketan English Medium School			135	</td>	</tr>
-<tr>	<td>	Shree Mumbadevi Vidya Niketan-Alternate Entrance			136	</td>	</tr>
-<tr>	<td>	Shree Ratnachandraji Jain Vidya Mandir			137	</td>	</tr>
-<tr>	<td>	Shri Saikrupa Group of Institution			138	</td>	</tr>
-<tr>	<td>	Sinhal JR College of Science			139	</td>	</tr>
-<tr>	<td>	Sister Nevedita International School			140	</td>	</tr>
-<tr>	<td>	Sodawala Lane English School			141	</td>	</tr>
-<tr>	<td>	Sodawala Lane High School			142	</td>	</tr>
-<tr>	<td>	Sodawala Lane Hindi School			143	</td>	</tr>
-<tr>	<td>	Sodawala Lane Kannad School			144	</td>	</tr>
-<tr>	<td>	Sodawala Lane Marathi School			145	</td>	</tr>
-<tr>	<td>	Sodawala Lane Telgu School			146	</td>	</tr>
-<tr>	<td>	Sodawala Lane Uchha Prathamik Vyavsayik School			147	</td>	</tr>
-<tr>	<td>	Space Kids Play School			148	</td>	</tr>
-<tr>	<td>	Sri Sri Ravishankar Vidya Mandir			149	</td>	</tr>
-<tr>	<td>	Sri Sri Ravishankar Vidya Mandir			150	</td>	</tr>
-<tr>	<td>	St Aloysius High School			151	</td>	</tr>
-<tr>	<td>	St Francis Dassisi High School & Junior Col			152	</td>	</tr>
-<tr>	<td>	St Francis Dassisi High School			153	</td>	</tr>
-<tr>	<td>	St Lawrence High School			154	</td>	</tr>
-<tr>	<td>	St Rocks School			155	</td>	</tr>
-<tr>	<td>	Suvidyalaya			156	</td>	</tr>
-<tr>	<td>	Swami Vivekanand International School			157	</td>	</tr>
-<tr>	<td>	The Dream School			158	</td>	</tr>
-<tr>	<td>	The Tree House Playgroup & Nursery			159	</td>	</tr>
-<tr>	<td>	The Tree House Playgroup & Nursery			160	</td>	</tr>
-<tr>	<td>	The Tree House Playgroup & Nursery			161	</td>	</tr>
-<tr>	<td>	The Tree House Playgroup & Nursery			162	</td>	</tr>
-<tr>	<td>	The Tree House			163	</td>	</tr>
-<tr>	<td>	The Tree House			164	</td>	</tr>
-<tr>	<td>	The Tree House			165	</td>	</tr>
-<tr>	<td>	The Tree House			166	</td>	</tr>
-<tr>	<td>	The Tree House			167	</td>	</tr>
-<tr>	<td>	The Tree House			168	</td>	</tr>
-<tr>	<td>	The Tree House			169	</td>	</tr>
-<tr>	<td>	The Tree House			170	</td>	</tr>
-<tr>	<td>	The Tree House			171	</td>	</tr>
-<tr>	<td>	The Tree House			172	</td>	</tr>
-<tr>	<td>	Trimurti High School			173	</td>	</tr>
-<tr>	<td>	Twinkle Playgroup & Nursery			174	</td>	</tr>
-<tr>	<td>	Ucch Madhyamik Matimand School			175	</td>	</tr>
-<tr>	<td>	V K Krishna Menon Academy			176	</td>	</tr>
-<tr>	<td>	Vidya Vikas Sabha High School			177	</td>	</tr>
-<tr>	<td>	Vijsy Nagar High School			178	</td>	</tr>
-<tr>	<td>	Vrajlal D Valia Junior Col of Com			179	</td>	</tr>
-<tr>	<td>	Xavier Child Development Centre			180	</td>	</tr>
-<tr>	<td>	Yojana Junior College			181	</td>	</tr>
-<tr>	<td>	Awesome Kids			182	</td>	</tr>
-<tr>	<td>	Awesome Kids			183	</td>	</tr>
-<tr>	<td>	Blossoms Play Group Nursery & K G			184	</td>	</tr>
-<tr>	<td>	Blossoms Play Group Nursery & K G			185	</td>	</tr>
-<tr>	<td>	Blossoms Playgroup & Nursery			186	</td>	</tr>
-<tr>	<td>	Brainy Brats Play School			187	</td>	</tr>
-<tr>	<td>	Bright Beginning with Little Step			188	</td>	</tr>
-<tr>	<td>	Bright Beginning with Little Step			189	</td>	</tr>
-<tr>	<td>	Buddy Buds			190	</td>	</tr>
-<tr>	<td>	Buddy Buds			191	</td>	</tr>
-<tr>	<td>	Chhote Ustaad Play Group Nursery & Activity Centre			192	</td>	</tr>
-<tr>	<td>	Cloud 9 Pre-School			193	</td>	</tr>
-<tr>	<td>	Ding Dong Playgroup & Nursery			194	</td>	</tr>
-<tr>	<td>	Dolphins			195	</td>	</tr>
-<tr>	<td>	Dolphins			196	</td>	</tr>
-<tr>	<td>	Dolphins			197	</td>	</tr>
-<tr>	<td>	I Play & Learn			198	</td>	</tr>
-<tr>	<td>	Indo Kids			199	</td>	</tr>
-<tr>	<td>	Indo Kids			200	</td>	</tr>
-<tr>	<td>	Jijamata Balwadi			201	</td>	</tr>
-<tr>	<td>	Jingles Play Group Nursery & Activity Centre			202	</td>	</tr>
-<tr>	<td>	Jingles Playgroup			203	</td>	</tr>
-<tr>	<td>	Kid Zone Multi Activity Centre			204	</td>	</tr>
-<tr>	<td>	Kids Corner			205	</td>	</tr>
-<tr>	<td>	Kids Small Wonders			206	</td>	</tr>
-<tr>	<td>	Kinds Wonder Playgroup & Nursery			207	</td>	</tr>
-<tr>	<td>	Little Angels Nursery			208	</td>	</tr>
-<tr>	<td>	Little Angles Pre School			209	</td>	</tr>
-<tr>	<td>	Little Star Play Group & Nursery			210	</td>	</tr>
-<tr>	<td>	Littleones Nursery and Play Group			211	</td>	</tr>
-<tr>	<td>	Mickey Play House			212	</td>	</tr>
-<tr>	<td>	Mothers Touch			213	</td>	</tr>
-<tr>	<td>	Mothers Touch			214	</td>	</tr>
-<tr>	<td>	Next Generation			215	</td>	</tr>
-<tr>	<td>	Prathamesh Nursery			216	</td>	</tr>
-<tr>	<td>	Ramkrishna Balmandir			217	</td>	</tr>
-<tr>	<td>	Rosary English School			218	</td>	</tr>
-<tr>	<td>	Shishumandir Play Group & Nursery			219	</td>	</tr>
-<tr>	<td>	Sun Shine Playgroup Nursery			220	</td>	</tr>
-<tr>	<td>	The First Step Play School & Nursery			221	</td>	</tr>
-<tr>	<td>	The Tree House			222	</td>	</tr>
-<tr>	<td>	The Tree House			223	</td>	</tr>
-<tr>	<td>	The Tree House			224	</td>	</tr>
-<tr>	<td>	The Tree House			225	</td>	</tr>
-<tr>	<td>	The Tree House			226	</td>	</tr>
-<tr>	<td>	The Tree House			227	</td>	</tr>
-<tr>	<td>	Tini Mini Play Group Nursery			228	</td>	</tr>
-<tr>	<td>	Tiny Tots Playgrounp & Nursery			229	</td>	</tr>
-<tr>	<td>	Toddlers Academy			230	</td>	</tr>
-<tr>	<td>	Twinkle Kids			231	</td>	</tr>
-<tr>	<td>	Twinkle Star Playgroup & Nursery			232	</td>	</tr>
-<tr>	<td>	Twinkle Star Playgroup & Nursery			233	</td>	</tr>
-<tr>	<td>	Wonder Kids			234	</td>	</tr>
-<tr>	<td>	Wonder Kids			235	</td>	</tr>
-<tr>	<td>	Wonder World Nursery Play Group			236	</td>	</tr>
-<tr>	<td>	smart Kidz			237	</td>	</tr>
-<tr>	<td>	smart Kidz			238	</td>	</tr>
-<tr>	<td>	smart Steps			239	</td>	</tr>
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
 
 
-</table>
+<body align="center" bgcolor="#00FF00">
+<font face="comic sans ms" color="brown">
+<h1> <b>
 
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
+Schools in Borivali
+
+
+
+</b> </h1></font>
+<div class="row">
+
+	<div class="col-sm-2">
+<style>
+  .bordered {
+    width: 100%;
+    height: 50%;
+    padding: 1px;
+    border: px solid black;
+    border-radius: 10px;
   }
-}
-</script>
+</style>
+<div class="bordered">
+   
+<iframe src="https://xyz.here.com/viewer/?project_id=bcad7d10-4906-4d50-a653-53ff1313e03f"  width=100% height=100% frameborder="0"></iframe>
+   </div>
+   </div>
+   
+ 
+<div class="col-sm-2">
+<style>
+  .bordered {
+    width: 100%;
+    height: 50%;
+    padding: 1px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+</style>
+<div class="bordered">
+   
+<iframe src="Data.html" width=100% height=100% ></iframe>
+<br>
+</div>
+    
+    
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
 
 </body>
 </html>
