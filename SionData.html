@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Sion</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+
+							
+<tr>	<td>	A M K Premier High School	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	Amar Shahid Hindi High School	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	Aryan JR College	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	BMC School	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	BMC School	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	Bharat Sevak Samaj	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	Blooming Buds Play Group	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	D D Babasaheb Deshpande Primary School	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	Dharmaprakash Nivassya School	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Dimpal Kids Nursery	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	Guru Nanak English Montessori School	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	Guru Nanak Hindi Montessori School	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	Guru Nanak National High School	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Guru Nanak Technical High School	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Jain School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	Joglekarwadi MNP Shala Sankul	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	Karmavir Dadasaheb Gaikwad School	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	Khajuri Bhatti Miu Pri Marathi School	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Kids Planet	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Kids Planet	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Kidzee	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	Kidzee	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Leap Bridge	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	Lion M P Bhuta Sion Sarvajanik School	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Little Angels School	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Little Angles	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Little Blossom Nursery	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Little Blossom Nursery	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Lok Seva Sangam	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Lok Seva Sangam	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	New Sion MNP School	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	Our Lady of Good Counsel High School	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	People Welfare Society Primary School	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Play Zone	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Priyadarshini Vidyamandir & Junior College of Arts & Commerce	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	Priyadarshini Vidyamandir & Junior College of Arts & Commerce	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	SMT Kamalaben Gambhirchand Shah English Medium School	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	Sardar Nagar B M C School	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	Satyam Hindi High School	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	Savitri Bai Bal Vikas Vidyalaya	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	Shiv Mahanagar Palika Secondary School	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	Shree Vallabh School Gujrati Medium	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	Shri Ishwardas Bhatia Tiny Tots School	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	Shri Vallabh English High School	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	Shri Vallabh English High School	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	Sion English School	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	Sion Koliwada BMC Hindi School	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Sion Koliwada English Medium Public School	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Sri Gauri Dutt Mittal Vidyalaya & JR College	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Swadeshi Marathi School	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	The Tree House Playgroup & Nursery	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Tree House	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	Triniti International School	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	Vidhya Veekas School	</td>	<td>	54	</td>	</tr>
+<tr>	<td>	Bubbles Playgroup & Nursery		<td>	55	</td>	</tr>
+<tr>	<td>	Honey Bee Play Group & Nursery		<td>	56	</td>	</tr>
+<tr>	<td>	Kids Planet Pre Primary School		<td>	57	</td>	</tr>
+<tr>	<td>	Kids Planet Pre Primary School		<td>	58	</td>	</tr>
+<tr>	<td>	Kids World Play-Group & Nursery		<td>	59	</td>	</tr>
+<tr>	<td>	Kids World Play-Group & Nursery		<td>	60	</td>	</tr>
+<tr>	<td>	Kids World Play-Group & Nursery		<td>	61	</td>	</tr>
+<tr>	<td>	Kids World Pre School		<td>	62	</td>	</tr>
+<tr>	<td>	Kids World Pre School		<td>	63	</td>	</tr>
+<tr>	<td>	Kids World Pre School		<td>	64	</td>	</tr>
+<tr>	<td>	Kids World Pre School		<td>	65	</td>	</tr>
+<tr>	<td>	Little Flowers Bloom		<td>	66	</td>	</tr>
+<tr>	<td>	Little Genius Playschool & Nursery		<td>	67	</td>	</tr>
+<tr>	<td>	Little Smileys		<td>	68	</td>	</tr>
+<tr>	<td>	Madrasa Tajweed Ul Quraan		<td>	69	</td>	</tr>
+<tr>	<td>	Madrasa Talimul Quran		<td>	70	</td>	</tr>
+<tr>	<td>	Manoranjan Balwadi		<td>	71	</td>	</tr>
+<tr>	<td>	Sadhana Vidyalaya		<td>	72	</td>	</tr>
+<tr>	<td>	Sharon Pre Primary & Primary School		<td>	73	</td>	</tr>
+<tr>	<td>	Tot Nursery & Tuition		<td>	74	</td>	</tr>
+<tr>	<td>	Twinkle Star Nursery and Play School		<td>	75	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
