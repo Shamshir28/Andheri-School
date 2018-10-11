@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Govandi</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">School</th>
+    <th style="width:40%;">ID</th>
+  </tr>
+							
+<tr>	<td>	Adarsh Bhootpurv Sainik High School	</td>	<td>	1	</td>	</tr>
+<tr>	<td>	Agarwadi Higher Secondary Hindi School No-1	</td>	<td>	2	</td>	</tr>
+<tr>	<td>	Agarwadi Higher Secondary Hindi School No-2	</td>	<td>	3	</td>	</tr>
+<tr>	<td>	Agarwadi Higher Secondary Marathi School	</td>	<td>	4	</td>	</tr>
+<tr>	<td>	Aisha Education Trust	</td>	<td>	5	</td>	</tr>
+<tr>	<td>	Aisha English High School	</td>	<td>	6	</td>	</tr>
+<tr>	<td>	Aisha English Primary School	</td>	<td>	7	</td>	</tr>
+<tr>	<td>	Aisha Junior College of Arts Science & Commerce	</td>	<td>	8	</td>	</tr>
+<tr>	<td>	Al Amaan English School	</td>	<td>	9	</td>	</tr>
+<tr>	<td>	Al Kausar Urdu High School	</td>	<td>	10	</td>	</tr>
+<tr>	<td>	Al Kausar Urdu Primary School	</td>	<td>	11	</td>	</tr>
+<tr>	<td>	Al Misbaah English School	</td>	<td>	12	</td>	</tr>
+<tr>	<td>	Al Unmah English School	</td>	<td>	13	</td>	</tr>
+<tr>	<td>	Al-Farhat Urdu High School	</td>	<td>	14	</td>	</tr>
+<tr>	<td>	Al-Mahdi Urdu High School	</td>	<td>	15	</td>	</tr>
+<tr>	<td>	Alam Islamic English School	</td>	<td>	16	</td>	</tr>
+<tr>	<td>	All Saints English School	</td>	<td>	17	</td>	</tr>
+<tr>	<td>	Anjuman Behrul Uloom Urdu High School	</td>	<td>	18	</td>	</tr>
+<tr>	<td>	Anjuman Ikra Urdu High School	</td>	<td>	19	</td>	</tr>
+<tr>	<td>	Anjuman Inayatul Islam Urdu High School	</td>	<td>	20	</td>	</tr>
+<tr>	<td>	Anjuman Madarasa	</td>	<td>	21	</td>	</tr>
+<tr>	<td>	Anjuman Madarasa	</td>	<td>	22	</td>	</tr>
+<tr>	<td>	Anjuman Riyaz Ul Islam Urdu Primary School No 1	</td>	<td>	23	</td>	</tr>
+<tr>	<td>	Anjuman Riyaz Ul Islam Urdu Primary School	</td>	<td>	24	</td>	</tr>
+<tr>	<td>	Anjuman Riyaz-Ul-Islam High School	</td>	<td>	25	</td>	</tr>
+<tr>	<td>	Anjuman Taqviyatul Iman Urdu High School	</td>	<td>	26	</td>	</tr>
+<tr>	<td>	Anna Bhau Sathe Balwadi	</td>	<td>	27	</td>	</tr>
+<tr>	<td>	Aqram English School	</td>	<td>	28	</td>	</tr>
+<tr>	<td>	Aqram English School	</td>	<td>	29	</td>	</tr>
+<tr>	<td>	Awami Girl High School & Junior College	</td>	<td>	30	</td>	</tr>
+<tr>	<td>	B M C Balwadi	</td>	<td>	31	</td>	</tr>
+<tr>	<td>	B M C Urdu School No-4	</td>	<td>	32	</td>	</tr>
+<tr>	<td>	BMC School-Sanjay Nagar	</td>	<td>	33	</td>	</tr>
+<tr>	<td>	Bait Ul Naseeb Urdu School	</td>	<td>	34	</td>	</tr>
+<tr>	<td>	Bal Vikas Seva Yojna-Anganwadi	</td>	<td>	35	</td>	</tr>
+<tr>	<td>	Balwadi-Govandi Gaondevi Trust	</td>	<td>	36	</td>	</tr>
+<tr>	<td>	Bharat Nagar Urdu High School	</td>	<td>	37	</td>	</tr>
+<tr>	<td>	Buddha Jan Panchayat Samiti Balwadi	</td>	<td>	38	</td>	</tr>
+<tr>	<td>	Burlington Junior College	</td>	<td>	39	</td>	</tr>
+<tr>	<td>	Cambridge English High School	</td>	<td>	40	</td>	</tr>
+<tr>	<td>	Chhatrapati Raje Sambhaji School	</td>	<td>	41	</td>	</tr>
+<tr>	<td>	Citizen English High School	</td>	<td>	42	</td>	</tr>
+<tr>	<td>	Cosmos High School	</td>	<td>	43	</td>	</tr>
+<tr>	<td>	Daffodil English High School	</td>	<td>	44	</td>	</tr>
+<tr>	<td>	Daffodil English School	</td>	<td>	45	</td>	</tr>
+<tr>	<td>	Dar Ul Madinah	</td>	<td>	46	</td>	</tr>
+<tr>	<td>	Datta Tarun Mandal Anganwadi	</td>	<td>	47	</td>	</tr>
+<tr>	<td>	Deonar Colony Municipal Urdu School	</td>	<td>	48	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony English School	</td>	<td>	49	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Gujrati Shala	</td>	<td>	50	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Hindi Shala	</td>	<td>	51	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Kannad Shala	</td>	<td>	52	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Marathi Shala No-1	</td>	<td>	53	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Marathi Shala No-3	</td>	<td>	54	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Shala Samuha	</td>	<td>	55	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Tamil Shala	</td>	<td>	56	</td>	</tr>
+<tr>	<td>	Deonar Municipal Colony Urdu Shala No-1	</td>	<td>	57	</td>	</tr>
+<tr>	<td>	Devnar Primary Municipal Marathi School	</td>	<td>	58	</td>	</tr>
+<tr>	<td>	Dnyan Sampada High School	</td>	<td>	59	</td>	</tr>
+<tr>	<td>	Dnyansagar Vidhyamandir	</td>	<td>	60	</td>	</tr>
+<tr>	<td>	Dr Babasaheb Ambedkar Balwadi	</td>	<td>	61	</td>	</tr>
+<tr>	<td>	Enfant India English School	</td>	<td>	62	</td>	</tr>
+<tr>	<td>	Faizul Mateen English School	</td>	<td>	63	</td>	</tr>
+<tr>	<td>	Govandi Education Society Complex	</td>	<td>	64	</td>	</tr>
+<tr>	<td>	Govandi Education Society	</td>	<td>	65	</td>	</tr>
+<tr>	<td>	Govandi Station M N P School	</td>	<td>	66	</td>	</tr>
+<tr>	<td>	Happy Children English School	</td>	<td>	67	</td>	</tr>
+<tr>	<td>	Haqani Madarsa	</td>	<td>	68	</td>	</tr>
+<tr>	<td>	Holy Ali English School	</td>	<td>	69	</td>	</tr>
+<tr>	<td>	Honest Life English School	</td>	<td>	70	</td>	</tr>
+<tr>	<td>	Huda English School	</td>	<td>	71	</td>	</tr>
+<tr>	<td>	Jafari English High School & Junior College	</td>	<td>	72	</td>	</tr>
+<tr>	<td>	Jauhar Ideal English School	</td>	<td>	73	</td>	</tr>
+<tr>	<td>	Kumud English High School	</td>	<td>	74	</td>	</tr>
+<tr>	<td>	Kumud Vidya Mandir English School	</td>	<td>	75	</td>	</tr>
+<tr>	<td>	Kumud Vidyamandir	</td>	<td>	76	</td>	</tr>
+<tr>	<td>	Little Angels English School	</td>	<td>	77	</td>	</tr>
+<tr>	<td>	Little Angels Special School	</td>	<td>	78	</td>	</tr>
+<tr>	<td>	Little Champs Pre Primary School	</td>	<td>	79	</td>	</tr>
+<tr>	<td>	Little Champs Pre Primary School	</td>	<td>	80	</td>	</tr>
+<tr>	<td>	Lumbini Baag Marathi Shala No 1-2-3	</td>	<td>	81	</td>	</tr>
+<tr>	<td>	Lumbinibaug MNP Marathi Shala	</td>	<td>	82	</td>	</tr>
+<tr>	<td>	Madani Madarsa	</td>	<td>	83	</td>	</tr>
+<tr>	<td>	Madarasa Noorani Ahle Waljamat	</td>	<td>	84	</td>	</tr>
+<tr>	<td>	Madarasa Rizviya	</td>	<td>	85	</td>	</tr>
+<tr>	<td>	Madarsa Ahle Hadees	</td>	<td>	86	</td>	</tr>
+<tr>	<td>	Madarsa Ahle Hadees	</td>	<td>	87	</td>	</tr>
+<tr>	<td>	Madarsa Arabiya Qudariya	</td>	<td>	88	</td>	</tr>
+<tr>	<td>	Madarsa Chamane Mustafa	</td>	<td>	89	</td>	</tr>
+<tr>	<td>	Madarsa Darut Touheed Ahle Hadees	</td>	<td>	90	</td>	</tr>
+<tr>	<td>	Madarsa Gulshan Ajmeri	</td>	<td>	91	</td>	</tr>
+<tr>	<td>	Madarsa Khadi Jatul Kubra	</td>	<td>	92	</td>	</tr>
+<tr>	<td>	Madarsa Khadi Jatul Kubra	</td>	<td>	93	</td>	</tr>
+<tr>	<td>	Madarsa Noori Subhan	</td>	<td>	94	</td>	</tr>
+<tr>	<td>	Madarsa Rehmaniya	</td>	<td>	95	</td>	</tr>
+<tr>	<td>	Madarsa Talimul Quran	</td>	<td>	96	</td>	</tr>
+<tr>	<td>	Madarsa Usmaniya	</td>	<td>	97	</td>	</tr>
+<tr>	<td>	Madarsa-E-Husainiya	</td>	<td>	98	</td>	</tr>
+<tr>	<td>	Madrasa Khadijatul Kubra Lilbanatis Salihaat	</td>	<td>	99	</td>	</tr>
+<tr>	<td>	Madrasa	</td>	<td>	100	</td>	</tr>
+<tr>	<td>	Madresa Nashir Ul Uloom Masjid	</td>	<td>	101	</td>	</tr>
+<tr>	<td>	Mahatma Gandhi English High School	</td>	<td>	102	</td>	</tr>
+<tr>	<td>	Mamta Bal Mandir	</td>	<td>	103	</td>	</tr>
+<tr>	<td>	Masjid O Madrasa Fazan E Awliyaa	</td>	<td>	104	</td>	</tr>
+<tr>	<td>	Matoshree Vidyamandir	</td>	<td>	105	</td>	</tr>
+<tr>	<td>	Misbaul Uloom Anjuman Falahe Darin Madarsa	</td>	<td>	106	</td>	</tr>
+<tr>	<td>	Muskan English School	</td>	<td>	107	</td>	</tr>
+<tr>	<td>	National English School	</td>	<td>	108	</td>	</tr>
+<tr>	<td>	New Standard English School	</td>	<td>	109	</td>	</tr>
+<tr>	<td>	Noble English School	</td>	<td>	110	</td>	</tr>
+<tr>	<td>	Noor Ul Islam Urdu High School & Junior College	</td>	<td>	111	</td>	</tr>
+<tr>	<td>	Onyx World	</td>	<td>	112	</td>	</tr>
+<tr>	<td>	Pearls Primary English School	</td>	<td>	113	</td>	</tr>
+<tr>	<td>	Prajasattak Vidhyalaya	</td>	<td>	114	</td>	</tr>
+<tr>	<td>	Prerna Night High School	</td>	<td>	115	</td>	</tr>
+<tr>	<td>	R S T Higher Sec School	</td>	<td>	116	</td>	</tr>
+<tr>	<td>	R S T Junior College		<td>	117	</td>	</tr>
+<tr>	<td>	RBK International Academy		<td>	118	</td>	</tr>
+<tr>	<td>	RBK International Academy		<td>	119	</td>	</tr>
+<tr>	<td>	RBK International Academy		<td>	120	</td>	</tr>
+<tr>	<td>	RBK International Academy		<td>	121	</td>	</tr>
+<tr>	<td>	Rafi Nagar Urdu School No 1		<td>	122	</td>	</tr>
+<tr>	<td>	Ramlingam Edu Foundation English High School & Junior College		<td>	123	</td>	</tr>
+<tr>	<td>	Ruby English High School & Junior College		<td>	124	</td>	</tr>
+<tr>	<td>	S N Little Star		<td>	125	</td>	</tr>
+<tr>	<td>	S N Little Star		<td>	126	</td>	</tr>
+<tr>	<td>	S Veer Sawarkar High School & JR College		<td>	127	</td>	</tr>
+<tr>	<td>	Sana Urdu Primary School		<td>	128	</td>	</tr>
+<tr>	<td>	Sant Dynaneshwar Vidyalaya		<td>	129	</td>	</tr>
+<tr>	<td>	Shivaji Nagar M N P Shala Sankul		<td>	130	</td>	</tr>
+<tr>	<td>	Shivaji Nagar MNP Urdu Shala No-7		<td>	131	</td>	</tr>
+<tr>	<td>	Shivaji Nagar Mahanagar Palika School No 1		<td>	132	</td>	</tr>
+<tr>	<td>	Shivaji Nagar Marathi School No 3		<td>	133	</td>	</tr>
+<tr>	<td>	Shivaji Nagar Municipal School No 2-Entrance 1		<td>	134	</td>	</tr>
+<tr>	<td>	Shivaji Nagar Municipal School No 2		<td>	135	</td>	</tr>
+<tr>	<td>	Shivaji Nagar Vidyalaya		<td>	136	</td>	</tr>
+<tr>	<td>	Shivam Vidhyamandir Mankhurd		<td>	137	</td>	</tr>
+<tr>	<td>	Shree Geeta Vidyalaya		<td>	138	</td>	</tr>
+<tr>	<td>	St Marry's English School		<td>	139	</td>	</tr>
+<tr>	<td>	Sufi Ahmed Hasan English School		<td>	140	</td>	</tr>
+<tr>	<td>	Sun Grace Convent School		<td>	141	</td>	</tr>
+<tr>	<td>	Sun Grace JR College of Commerce		<td>	142	</td>	</tr>
+<tr>	<td>	Sunni Jahangiri Madarsa		<td>	143	</td>	</tr>
+<tr>	<td>	Sunrise Islamic English School		<td>	144	</td>	</tr>
+<tr>	<td>	Swami Ramkrishna Paramhans Junior College		<td>	145	</td>	</tr>
+<tr>	<td>	Swargandha Nursery		<td>	146	</td>	</tr>
+<tr>	<td>	Unique Hindi High School		<td>	147	</td>	</tr>
+<tr>	<td>	United English School		<td>	148	</td>	</tr>
+<tr>	<td>	Usmania Urdu High School		<td>	149	</td>	</tr>
+<tr>	<td>	Veer Sawarkar English School & Junior College		<td>	150	</td>	</tr>
+<tr>	<td>	Active Kids		<td>	151	</td>	</tr>
+<tr>	<td>	Al Muqaddas Mohammadiya Arabi Madarsa		<td>	152	</td>	</tr>
+<tr>	<td>	Angels Paradise		<td>	153	</td>	</tr>
+<tr>	<td>	Anjumman Falaha Ul-Mominin		<td>	154	</td>	</tr>
+<tr>	<td>	Arabi Madarsa		<td>	155	</td>	</tr>
+<tr>	<td>	Bismillah Madarsa		<td>	156	</td>	</tr>
+<tr>	<td>	Darul Faizul Rasool Madarsa		<td>	157	</td>	</tr>
+<tr>	<td>	Gausia Arabic Wa Talimul Islam Madarsa		<td>	158	</td>	</tr>
+<tr>	<td>	Gulshan Va Barkat E Raza Madarsa		<td>	159	</td>	</tr>
+<tr>	<td>	Incy Wincy Playgroup		<td>	160	</td>	</tr>
+<tr>	<td>	Jamat Madarsa Arabiya Noorul Islam		<td>	161	</td>	</tr>
+<tr>	<td>	Jamat Madarsa Hidyatul Islam		<td>	162	</td>	</tr>
+<tr>	<td>	Jamat Madarsa Talim Ul Quran		<td>	163	</td>	</tr>
+<tr>	<td>	Kca St Francis of Assisi International School		<td>	164	</td>	</tr>
+<tr>	<td>	Madarsa Anjuman Zeente Islam		<td>	165	</td>	</tr>
+<tr>	<td>	Madarsa Anwar Ul Huda		<td>	166	</td>	</tr>
+<tr>	<td>	Madarsa Asahabe Sufa		<td>	167	</td>	</tr>
+<tr>	<td>	Madarsa Ata E Rasool Talim Ul Quraan		<td>	168	</td>	</tr>
+<tr>	<td>	Madarsa Barkatiya Faizanul Uloom		<td>	169	</td>	</tr>
+<tr>	<td>	Madarsa Faizane Hashmat		<td>	170	</td>	</tr>
+<tr>	<td>	Madarsa Ittehadul Muslemeen		<td>	171	</td>	</tr>
+<tr>	<td>	Madarsa Khalilia Darool Uloom		<td>	172	</td>	</tr>
+<tr>	<td>	Madarsa Niyaje Hussain Committee		<td>	173	</td>	</tr>
+<tr>	<td>	Madarsa Nizamiya		<td>	174	</td>	</tr>
+<tr>	<td>	Madarsa Raza E Mustafa		<td>	175	</td>	</tr>
+<tr>	<td>	Madarsa Tajveedu Ul Quraan		<td>	176	</td>	</tr>
+<tr>	<td>	Madni Madarsa		<td>	177	</td>	</tr>
+<tr>	<td>	Madrasa Ashrafiya Ghayasul Uloom		<td>	178	</td>	</tr>
+<tr>	<td>	Madrasa E Gausia		<td>	179	</td>	</tr>
+<tr>	<td>	Madrasa Moulana Ilyas Rah		<td>	180	</td>	</tr>
+<tr>	<td>	Navjawan Education Society-Balwadi		<td>	181	</td>	</tr>
+<tr>	<td>	Noore Mohammadi Madarsa		<td>	182	</td>	</tr>
+<tr>	<td>	Quba Madarsa		<td>	183	</td>	</tr>
+<tr>	<td>	Sunni Barelvi Madarsa		<td>	184	</td>	</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
