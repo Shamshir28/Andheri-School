@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Blood Band details</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+ 
+    <th style="width:40%;">Name</th>
+    <th style="width:10%;">ID</th>
+<th style="width:50%;">Address</th>
+  </tr>
+										
+<tr>	<td>	Matoshree Valbai Mulji Shah Arpan Blood Bank	</td>	<td>	1	</td>	<td>	 2nd Floor, Aniraj Tower, Opposite Metro Mall, Lal Bahadur Shastri Road, Bhandup West, Mumbai, Maharashtra 400078	</td>	</tr>
+<tr>	<td>	Samarpan Blood Bank	</td>	<td>	2	</td>	<td>	Sarvodaya Hospital, Office Building, 2nd Floor, L B S, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086	</td>	</tr>
+<tr>	<td>	Suburban Hitech Blood Bank	</td>	<td>	3	</td>	<td>	No. 206, Shagun Building, Rani Sati Marg, Malad East,, Mumbai, Maharashtra 400097	</td>	</tr>
+<tr>	<td>	Manas Blood Bank	</td>	<td>	4	</td>	<td>	1st Floor, Grace Plaza, Swami Vivekananda Rd, Jogeshwari West, Mumbai, Maharashtra 400102	</td>	</tr>
+<tr>	<td>	Navjivan Blood Bank And Lab	</td>	<td>	5	</td>	<td>	"Abhilasha II", Shop No.1, Punjabi Lane, Lokmanya Tilak Nagar, Maharashtra Nagar, Borivali West, Mumbai, Maharashtra 400092	</td>	</tr>
+<tr>	<td>	Borivali Blood Bank	</td>	<td>	6	</td>	<td>	Ground Floor, Vithal Appartment, S V P Road, Near Ram Mandir, Opposite Flyover, Mandapeshwar Rd, Borivali West, Mumbai, Maharashtra 400103	</td>	</tr>
+<tr>	<td>	Sant Nirankari Blood Bank	</td>	<td>	7	</td>	<td>	 O-9, Western Express Hwy, Navpada, Airports Authority Colony, Vile Parle, Mumbai, Maharashtra 400047	</td>	</tr>
+<tr>	<td>	Prabodhan Blood Bank	</td>	<td>	8	</td>	<td>	Ground Floor, Siddharth Hospital, Goregaon West, Mumbai, Maharashtra 400104	</td>	</tr>
+<tr>	<td>	Bloodline Charitable Blood Bank	</td>	<td>	9	</td>	<td>	Vikas Palms, Dr Ambedkar Rd, Dhobi Ali, Charai, Thane West, Thane, Maharashtra 400601	</td>	</tr>
+<tr>	<td>	Sion Blood Bank	</td>	<td>	10	</td>	<td>	 Opposite Sion bus depot, Near Sion circle, Mumbai, Maharashtra 400022	</td>	</tr>
+<tr>	<td>	Vaidya Blood Bank	</td>	<td>	11	</td>	<td>	1st Floor,Jeevan Jyot Hospital, Mahatma Gandhi Rd, Naupada, Thane West, Thane, Maharashtra 400602	</td>	</tr>
+<tr>	<td>	Sankalp Blood Bank	</td>	<td>	12	</td>	<td>	 Riddhi Siddhi Complex, Murbad Road, Opposite ICICI Bank,, Purnima, Kalyan, Maharashtra 421301	</td>	</tr>
+<tr>	<td>	Bhiwandi Blood Bank	</td>	<td>	13	</td>	<td>	271, 1/2, 2nd floor, Al-Hera Shopping Centre, Old Yakub Road, Teen Batti, Bhiwandi, Maharashtra 421302	</td>	</tr>
+<tr>	<td>	Rotary Dg Goenkar Blood Bank	</td>	<td>	14	</td>	<td>	Opposite Railway Station, Bses Mg Hospital, S V Road, Andheri (West)), Mumbai, 400058, 400058	</td>	</tr>
+<tr>	<td>	Seva Blood Bank	</td>	<td>	15	</td>	<td>	Acharya Tulsi Marg, Krishna Radha Society, Dombivli East, Dombivli, Maharashtra 421201	</td>	</tr>
+<tr>	<td>	Pandit Madan Mohan Malaviya Shatabdi Hospital	</td>	<td>	16	</td>	<td>	Waman Tukaram Patil Marg, Near Dukes Company, Patil Wadi, Govandi East, Chembur, Mumbai, Maharashtra 400088	</td>	</tr>
+<tr>	<td>	Rajawadi Hospital	</td>	<td>	17	</td>	<td>	M G Road, Near Somaiya College, Ghatkopar East, Mumbai, Maharashtra 400077	</td>	</tr>
+<tr>	<td>	Matoshree Valbai Mulji Shah Arpan Blood Bank	</td>	<td>	18	</td>	<td>	2nd Floor, Aniraj Tower, Opposite Metro Mall, Lal Bahadur Shastri Road, Bhandup West, Mumbai, Maharashtra 400078	</td>	</tr>
+<tr>	<td>	Sanjeevanee Hospital	</td>	<td>	19	</td>	<td>	172/A, Naigaum, Dadar East, Mahatma Jyotiba Phule Road, Mumbai, Maharashtra 400014	</td>	</tr>
+<tr>	<td>	Prabodhan Blood Bank	</td>	<td>	20	</td>	<td>	Ground Floor, Siddharth Hospital, Goregaon West, Mumbai, Maharashtra 400104	</td>	</tr>
+<tr>	<td>	Blood Bank KEM	</td>	<td>	21	</td>	<td>	30, Parmar Guruji Marg, Parel, Mumbai, Maharashtra 400012	</td>	</tr>
+<tr>	<td>	Suburban Hitech Blood Bank	</td>	<td>	22	</td>	<td>	No. 206, Shagun Building, Rani Sati Marg, Malad East,, Mumbai, Maharashtra 400097	</td>	</tr>
+<tr>	<td>	Sir J J Mahanagar Raktapedhi	</td>	<td>	23	</td>	<td>	Gate no 11,near jj marg police station, Mohammed Ali Rd, Mazgaon, Mumbai, Maharashtra 400008	</td>	</tr>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+<tr>	<td>				76	</td>			</td>	</tr>
+<tr>	<td>				77	</td>			</td>	</tr>
+<tr>	<td>				78	</td>			</td>	</tr>
+<tr>	<td>				79	</td>			</td>	</tr>
+<tr>	<td>				80	</td>			</td>	</tr>
+<tr>	<td>				81	</td>			</td>	</tr>
+<tr>	<td>				82	</td>			</td>	</tr>
+<tr>	<td>				83	</td>			</td>	</tr>
+<tr>	<td>				84	</td>			</td>	</tr>
+<tr>	<td>				85	</td>			</td>	</tr>
+<tr>	<td>				86	</td>			</td>	</tr>
+<tr>	<td>				87	</td>			</td>	</tr>
+<tr>	<td>				88	</td>			</td>	</tr>
+<tr>	<td>				89	</td>			</td>	</tr>
+<tr>	<td>				90	</td>			</td>	</tr>
+<tr>	<td>				91	</td>			</td>	</tr>
+<tr>	<td>				92	</td>			</td>	</tr>
+<tr>	<td>				93	</td>			</td>	</tr>
+<tr>	<td>				94	</td>			</td>	</tr>
+<tr>	<td>				95	</td>			</td>	</tr>
+<tr>	<td>				96	</td>			</td>	</tr>
+<tr>	<td>				97	</td>			</td>	</tr>
+<tr>	<td>				98	</td>			</td>	</tr>
+<tr>	<td>				99	</td>			</td>	</tr>
+<tr>	<td>				100	</td>			</td>	</tr>
+<tr>	<td>				101	</td>			</td>	</tr>
+<tr>	<td>				102	</td>			</td>	</tr>
+<tr>	<td>				103	</td>			</td>	</tr>
+<tr>	<td>				104	</td>			</td>	</tr>
+<tr>	<td>				105	</td>			</td>	</tr>
+<tr>	<td>				106	</td>			</td>	</tr>
+<tr>	<td>				107	</td>			</td>	</tr>
+<tr>	<td>				108	</td>			</td>	</tr>
+<tr>	<td>				109	</td>			</td>	</tr>
+<tr>	<td>				110	</td>			</td>	</tr>
+<tr>	<td>				111	</td>			</td>	</tr>
+<tr>	<td>				112	</td>			</td>	</tr>
+<tr>	<td>				113	</td>			</td>	</tr>
+<tr>	<td>				114	</td>			</td>	</tr>
+<tr>	<td>				115	</td>			</td>	</tr>
+<tr>	<td>				116	</td>			</td>	</tr>
+<tr>	<td>				117	</td>			</td>	</tr>
+<tr>	<td>				118	</td>			</td>	</tr>
+<tr>	<td>				119	</td>			</td>	</tr>
+<tr>	<td>				120	</td>			</td>	</tr>
+<tr>	<td>				121	</td>			</td>	</tr>
+<tr>	<td>				122	</td>			</td>	</tr>
+<tr>	<td>				123	</td>			</td>	</tr>
+<tr>	<td>				124	</td>			</td>	</tr>
+<tr>	<td>				125	</td>			</td>	</tr>
+<tr>	<td>				126	</td>			</td>	</tr>
+<tr>	<td>				127	</td>			</td>	</tr>
+<tr>	<td>				128	</td>			</td>	</tr>
+<tr>	<td>				129	</td>			</td>	</tr>
+<tr>	<td>				130	</td>			</td>	</tr>
+<tr>	<td>				131	</td>			</td>	</tr>
+<tr>	<td>				132	</td>			</td>	</tr>
+<tr>	<td>				133	</td>			</td>	</tr>
+<tr>	<td>				134	</td>			</td>	</tr>
+<tr>	<td>				135	</td>			</td>	</tr>
+<tr>	<td>				136	</td>			</td>	</tr>
+<tr>	<td>				137	</td>			</td>	</tr>
+<tr>	<td>				138	</td>			</td>	</tr>
+<tr>	<td>				139	</td>			</td>	</tr>
+<tr>	<td>				140	</td>			</td>	</tr>
+<tr>	<td>				141	</td>			</td>	</tr>
+<tr>	<td>				142	</td>			</td>	</tr>
+<tr>	<td>				143	</td>			</td>	</tr>
+<tr>	<td>				144	</td>			</td>	</tr>
+<tr>	<td>				145	</td>			</td>	</tr>
+<tr>	<td>				146	</td>			</td>	</tr>
+<tr>	<td>				147	</td>			</td>	</tr>
+<tr>	<td>				148	</td>			</td>	</tr>
+<tr>	<td>				149	</td>			</td>	</tr>
+<tr>	<td>				150	</td>			</td>	</tr>
+<tr>	<td>				151	</td>			</td>	</tr>
+<tr>	<td>				152	</td>			</td>	</tr>
+<tr>	<td>				153	</td>			</td>	</tr>
+<tr>	<td>				154	</td>			</td>	</tr>
+<tr>	<td>				155	</td>			</td>	</tr>
+<tr>	<td>				156	</td>			</td>	</tr>
+<tr>	<td>				157	</td>			</td>	</tr>
+<tr>	<td>				158	</td>			</td>	</tr>
+<tr>	<td>				159	</td>			</td>	</tr>
+<tr>	<td>				160	</td>			</td>	</tr>
+<tr>	<td>				161	</td>			</td>	</tr>
+<tr>	<td>				162	</td>			</td>	</tr>
+<tr>	<td>				163	</td>			</td>	</tr>
+<tr>	<td>				164	</td>			</td>	</tr>
+<tr>	<td>				165	</td>			</td>	</tr>
+<tr>	<td>				166	</td>			</td>	</tr>
+<tr>	<td>				167	</td>			</td>	</tr>
+<tr>	<td>				168	</td>			</td>	</tr>
+<tr>	<td>				169	</td>			</td>	</tr>
+<tr>	<td>				170	</td>			</td>	</tr>
+<tr>	<td>				171	</td>			</td>	</tr>
+<tr>	<td>				172	</td>			</td>	</tr>
+<tr>	<td>				173	</td>			</td>	</tr>
+<tr>	<td>				174	</td>			</td>	</tr>
+<tr>	<td>				175	</td>			</td>	</tr>
+<tr>	<td>				176	</td>			</td>	</tr>
+<tr>	<td>				177	</td>			</td>	</tr>
+<tr>	<td>				178	</td>			</td>	</tr>
+<tr>	<td>				179	</td>			</td>	</tr>
+<tr>	<td>				180	</td>			</td>	</tr>
+<tr>	<td>				181	</td>			</td>	</tr>
+<tr>	<td>				182	</td>			</td>	</tr>
+<tr>	<td>				183	</td>			</td>	</tr>
+<tr>	<td>				184	</td>			</td>	</tr>
+<tr>	<td>				185	</td>			</td>	</tr>
+<tr>	<td>				186	</td>			</td>	</tr>
+<tr>	<td>				187	</td>			</td>	</tr>
+<tr>	<td>				188	</td>			</td>	</tr>
+<tr>	<td>				189	</td>			</td>	</tr>
+<tr>	<td>				190	</td>			</td>	</tr>
+<tr>	<td>				191	</td>			</td>	</tr>
+<tr>	<td>				192	</td>			</td>	</tr>
+<tr>	<td>				193	</td>			</td>	</tr>
+<tr>	<td>				194	</td>			</td>	</tr>
+<tr>	<td>				195	</td>			</td>	</tr>
+<tr>	<td>				196	</td>			</td>	</tr>
+<tr>	<td>				197	</td>			</td>	</tr>
+<tr>	<td>				198	</td>			</td>	</tr>
+<tr>	<td>				199	</td>			</td>	</tr>
+<tr>	<td>				200	</td>			</td>	</tr>
+<tr>	<td>				201	</td>			</td>	</tr>
+<tr>	<td>				202	</td>			</td>	</tr>
+<tr>	<td>				203	</td>			</td>	</tr>
+<tr>	<td>				204	</td>			</td>	</tr>
+<tr>	<td>				205	</td>			</td>	</tr>
+<tr>	<td>				206	</td>			</td>	</tr>
+<tr>	<td>				207	</td>			</td>	</tr>
+<tr>	<td>				208	</td>			</td>	</tr>
+<tr>	<td>				209	</td>			</td>	</tr>
+<tr>	<td>				210	</td>			</td>	</tr>
+<tr>	<td>				211	</td>			</td>	</tr>
+<tr>	<td>				212	</td>			</td>	</tr>
+<tr>	<td>				213	</td>			</td>	</tr>
+<tr>	<td>				214	</td>			</td>	</tr>
+<tr>	<td>				215	</td>			</td>	</tr>
+<tr>	<td>				216	</td>			</td>	</tr>
+<tr>	<td>				217	</td>			</td>	</tr>
+<tr>	<td>				218	</td>			</td>	</tr>
+<tr>	<td>				219	</td>			</td>	</tr>
+<tr>	<td>				220	</td>			</td>	</tr>
+<tr>	<td>				221	</td>			</td>	</tr>
+<tr>	<td>				222	</td>			</td>	</tr>
+<tr>	<td>				223	</td>			</td>	</tr>
+<tr>	<td>				224	</td>			</td>	</tr>
+<tr>	<td>				225	</td>			</td>	</tr>
+<tr>	<td>				226	</td>			</td>	</tr>
+<tr>	<td>				227	</td>			</td>	</tr>
+<tr>	<td>				228	</td>			</td>	</tr>
+<tr>	<td>				229	</td>			</td>	</tr>
+<tr>	<td>				230	</td>			</td>	</tr>
+<tr>	<td>				231	</td>			</td>	</tr>
+<tr>	<td>				232	</td>			</td>	</tr>
+<tr>	<td>				233	</td>			</td>	</tr>
+<tr>	<td>				234	</td>			</td>	</tr>
+<tr>	<td>				235	</td>			</td>	</tr>
+<tr>	<td>				236	</td>			</td>	</tr>
+<tr>	<td>				237	</td>			</td>	</tr>
+<tr>	<td>				238	</td>			</td>	</tr>
+<tr>	<td>				239	</td>			</td>	</tr>
+<tr>	<td>				240	</td>			</td>	</tr>
+<tr>	<td>				241	</td>			</td>	</tr>
+<tr>	<td>				242	</td>			</td>	</tr>
+<tr>	<td>				243	</td>			</td>	</tr>
+<tr>	<td>				244	</td>			</td>	</tr>
+<tr>	<td>				245	</td>			</td>	</tr>
+<tr>	<td>				246	</td>			</td>	</tr>
+<tr>	<td>				247	</td>			</td>	</tr>
+<tr>	<td>				248	</td>			</td>	</tr>
+<tr>	<td>				249	</td>			</td>	</tr>
+<tr>	<td>				250	</td>			</td>	</tr>
+<tr>	<td>				251	</td>			</td>	</tr>
+<tr>	<td>				252	</td>			</td>	</tr>
+<tr>	<td>				253	</td>			</td>	</tr>
+<tr>	<td>				254	</td>			</td>	</tr>
+<tr>	<td>				255	</td>			</td>	</tr>
+<tr>	<td>				256	</td>			</td>	</tr>
+<tr>	<td>				257	</td>			</td>	</tr>
+<tr>	<td>				258	</td>			</td>	</tr>
+<tr>	<td>				259	</td>			</td>	</tr>
+<tr>	<td>				260	</td>			</td>	</tr>
+<tr>	<td>				261	</td>			</td>	</tr>
+<tr>	<td>				262	</td>			</td>	</tr>
+<tr>	<td>				263	</td>			</td>	</tr>
+<tr>	<td>				264	</td>			</td>	</tr>
+<tr>	<td>				265	</td>			</td>	</tr>
+<tr>	<td>				266	</td>			</td>	</tr>
+<tr>	<td>				267	</td>			</td>	</tr>
+<tr>	<td>				268	</td>			</td>	</tr>
+<tr>	<td>				269	</td>			</td>	</tr>
+<tr>	<td>				270	</td>			</td>	</tr>
+<tr>	<td>				271	</td>			</td>	</tr>
+<tr>	<td>				272	</td>			</td>	</tr>
+<tr>	<td>				273	</td>			</td>	</tr>
+<tr>	<td>				274	</td>			</td>	</tr>
+<tr>	<td>				275	</td>			</td>	</tr>
+<tr>	<td>				276	</td>			</td>	</tr>
+<tr>	<td>				277	</td>			</td>	</tr>
+<tr>	<td>				278	</td>			</td>	</tr>
+<tr>	<td>				279	</td>			</td>	</tr>
+<tr>	<td>				280	</td>			</td>	</tr>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
